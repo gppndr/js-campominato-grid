@@ -1,0 +1,68 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+html{
+    font-family: 'Rubik', sans-serif;
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common rules */
+body{
+    background-color: lightslategray;
+}
+.container{
+    width: 80%;
+    max-width: 1400px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    color: white;
+    background-color: darkkhaki;
+    border: 1px solid gainsboro;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    width: 30%;
+}
+.box.clicked{
+    background-color: darkslategray;
+}
+
+/* create */
+
+.create{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+}
+#playGame{
+    color: white;
+    background-color: darkkhaki;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: gainsboro;  
+    margin-inline: .5rem;
+}
+select{
+    color: white;
+    padding: .5rem;
+    background-color: darkkhaki;
+    font-size: 1.2rem;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: gainsboro;  
+    margin-inline: .5rem; 
+}
