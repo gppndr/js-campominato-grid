@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campominato</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
 </head>
+
 <body>
-    <div id="site_main">
+    <header id="site_header">
+        <div class="level">
+           <button id="play" class="play">Gioca</button>
+            <label for="levels">Difficoltà:</label>
+            <select name="levels" id="levels">
+                <option value="100" selected>Easy</option>
+                <option value="81">Hard</option>
+                <option value="49">Crazy</option>
+            </select>
+        </div>
+        <!-- ./levels -->
+    </header>
+    <!-- site_header -->
+    <main id="site_main">
+        <div class="help">Selezionare il livello e premere play per giocare</div>
         <div class="container">
-            <div class="create">
-                <button id="playGame">Gioca</button>
-                <select name="levels" id="difficulties">
-                    <option value="10">Difficoltà 1</option>
-                    <option value="9">Difficoltà 2</option>
-                    <option value="7">Difficoltà 3</option>
-                </select>
+            <div class="grid hidden">
+
+
             </div>
-            <!-- ./create -->
+            <!-- grid -->
         </div>
         <!-- ./container -->
-    </div>
+    </main>
     <!-- ./site_main -->
-    
+
 </body>
+
 </html>
